@@ -1,7 +1,8 @@
 const express = require('express');
+const testimonialsController = require('./controllers/testimonialsController');
 
 const router = express.Router();
 
-//router.get('/depoimentos', (req, res) => res.status(200).send('O router está funcionando!'));
+router.get('/depoimentos', testimonialsController.getTestimonials);
 
 module.exports = router;

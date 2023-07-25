@@ -15,12 +15,22 @@ const createTestimonial = async (testimonial) => {
 };
 
 const deleteTestimonial = async (id) => {
-	const removedTestimonial = await connection.execute('DELETE FROM testimonials WHERE id = ?', [id]);
+	const [removedTestimonial] = await connection.execute('DELETE FROM testimonials WHERE id = ?', [id]);
 	return removedTestimonial;
+};
+
+const updateTestimonial = async (id, testimonial) => {
+	const { message, author, image } = testimonial;
+
+	const query = 'UPDATE testimonials SET message = ?, author = ?, image = ? WHERE id = ?';
+
+	const [updatedTestimonial] = await connection.execute(query, [message, author, image, id]);
+	return updatedTestimonial;
 };
 
 module.exports = {
 	getTestimonial,
 	createTestimonial,
 	deleteTestimonial,
+	updateTestimonial,
 };

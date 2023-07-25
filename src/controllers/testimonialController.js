@@ -17,8 +17,16 @@ const deleteTestimonial = async (req, res) => {
 	return res.status(204).json();
 };
 
+const updateTestimonial = async (req, res) => {
+	const { id } = req.params;
+
+	await testimonialModel.updateTestimonial(id, req.body);
+	return res.status(204).json();
+};
+
 module.exports = {
 	getTestimonial,
 	createTestimonial,
 	deleteTestimonial,
+	updateTestimonial,
 };

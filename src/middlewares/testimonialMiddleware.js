@@ -1,4 +1,4 @@
-const validateBody = (req, res, next) => {
+const validateFieldMessage = (req, res, next) => {
 	const { body } = req;
 
 	if (body.message === undefined) {
@@ -12,6 +12,21 @@ const validateBody = (req, res, next) => {
 	next();
 };
 
+const validateFieldAuthor = (req, res, next) => {
+	const { body } = req;
+
+	if (body.author === undefined) {
+		return res.status(400).json({ message: 'The field "author" is required' });
+	}
+
+	if (body.author === '') {
+		return res.status(400).json({ message: 'author cannot be empty' });
+	}
+
+	next();
+};
+
 module.exports = {
-	validateBody,
+	validateFieldMessage,
+	validateFieldAuthor
 };

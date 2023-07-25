@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const testimonialsController = require('./controllers/testimonialsController');
-const testimonialsMiddleware = require('./middlewares/testimonialsMiddleware');
+const testimonialController = require('./controllers/testimonialController');
+const testimonialMiddleware = require('./middlewares/testimonialMiddleware');
 
-router.get('/depoimentos', testimonialsController.getTestimonials);
-router.post('/depoimentos', testimonialsMiddleware.validateBody, testimonialsController.createTestimonials);
+router.get('/depoimentos', testimonialController.getTestimonial);
+router.post('/depoimentos', testimonialMiddleware.validateBody, testimonialController.createTestimonial);
 
 module.exports = router;

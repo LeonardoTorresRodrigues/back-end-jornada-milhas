@@ -1,11 +1,11 @@
 const connection = require('./connection');
 
-const getTestimonials = async () => {
+const getTestimonial = async () => {
 	const [testimonials] = await connection.execute('SELECT * FROM testimonials');
 	return testimonials;
 };
 
-const createTestimonials = async (testimonial) => {
+const createTestimonial = async (testimonial) => {
 	const { message, author, image } = testimonial;
 
 	const query = 'INSERT INTO testimonials(message, author, image) VALUES (?, ?, ?)';
@@ -14,7 +14,8 @@ const createTestimonials = async (testimonial) => {
 	return { insertId: createdTestimonial.insertId };
 };
 
+
 module.exports = {
-	getTestimonials,
-	createTestimonials,
+	getTestimonial,
+	createTestimonial,
 };

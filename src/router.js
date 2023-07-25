@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const testimonialController = require('./controllers/testimonialController');
-const testimonialMiddleware = require('./middlewares/testimonialMiddleware');
+const reviewController = require('./controllers/reviewController');
+const reviewMiddleware = require('./middlewares/reviewMiddleware');
 
-router.get('/depoimentos', testimonialController.getTestimonial);
-router.post('/depoimentos', testimonialMiddleware.validateFieldMessage, testimonialController.createTestimonial);
-router.delete('/depoimentos/:id', testimonialController.deleteTestimonial);
+router.get('/depoimentos', reviewController.getReview);
+router.post('/depoimentos', reviewMiddleware.validateFieldMessage, reviewController.createReview);
+router.delete('/depoimentos/:id', reviewController.deleteReview);
 router.put('/depoimentos/:id',
-	testimonialMiddleware.validateFieldMessage,
-	testimonialMiddleware.validateFieldAuthor,
-	testimonialController.updateTestimonial
+	reviewMiddleware.validateFieldMessage,
+	reviewMiddleware.validateFieldAuthor,
+	reviewController.updateReview
 );
 
 module.exports = router;

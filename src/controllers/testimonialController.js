@@ -10,7 +10,15 @@ const createTestimonial = async (req, res) => {
 	return res.status(201).json(createTestimonials);
 };
 
+const deleteTestimonial = async (req, res) => {
+	const { id } = req.params;
+
+	await testimonialModel.deleteTestimonial(id);
+	return res.status(204).json();
+};
+
 module.exports = {
 	getTestimonial,
 	createTestimonial,
+	deleteTestimonial,
 };

@@ -14,8 +14,13 @@ const createTestimonial = async (testimonial) => {
 	return { insertId: createdTestimonial.insertId };
 };
 
+const deleteTestimonial = async (id) => {
+	const removedTestimonial = await connection.execute('DELETE FROM testimonials WHERE id = ?', [id]);
+	return removedTestimonial;
+};
 
 module.exports = {
 	getTestimonial,
 	createTestimonial,
+	deleteTestimonial,
 };

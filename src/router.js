@@ -4,6 +4,7 @@ const router = express.Router();
 const reviewController = require('./controllers/reviewController');
 const reviewMiddleware = require('./middlewares/reviewMiddleware');
 
+router.get('/depoimentos-home', reviewController.getRandomReview);
 router.get('/depoimentos', reviewController.getReview);
 router.post('/depoimentos', reviewMiddleware.validateFieldMessage, reviewController.createReview);
 router.delete('/depoimentos/:id', reviewController.deleteReview);

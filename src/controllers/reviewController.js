@@ -1,5 +1,10 @@
 const reviewModel = require('../models/reviewModel');
 
+const getRandomReview = async (_req, res) => {
+	const randomReview = await reviewModel.getRandomReview();
+	return res.status(200).json(randomReview);
+};
+
 const getReview = async (_req, res) => {
 	const review = await reviewModel.getReview();
 	return res.status(200).json(review);
@@ -24,7 +29,9 @@ const updateReview = async (req, res) => {
 	return res.status(204).json();
 };
 
+
 module.exports = {
+	getRandomReview,
 	getReview,
 	createReview,
 	deleteReview,

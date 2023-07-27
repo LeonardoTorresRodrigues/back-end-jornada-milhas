@@ -1,5 +1,10 @@
 const connection = require('./connection');
 
+const getRandomReview = async () => {
+	const [randomReview] = await connection.execute('SELECT * FROM testimonials ORDER BY RAND() LIMIT 3');
+	return randomReview;
+};
+
 const getReview = async () => {
 	const [review] = await connection.execute('SELECT * FROM testimonials');
 	return review;
@@ -33,4 +38,5 @@ module.exports = {
 	createReview,
 	deleteReview,
 	updateReview,
+	getRandomReview,
 };

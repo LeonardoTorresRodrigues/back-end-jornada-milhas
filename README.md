@@ -5,7 +5,7 @@ API que será integrada ao front-end.
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **API Jornada Milhas**
-| :label: Tecnologias | javascript, node, express, cors, mysql2, eslint, nodemon, dotenv, docker, insomnia, database client
+| :label: Tecnologias | javascript, node, express, cors, mysql2, eslint, nodemon, dotenv, docker, insomnia, database client, jest
 | :rocket: URL         | Em breve 🚧
 | :fire: Desafio     | https://www.alura.com.br/challenges
 

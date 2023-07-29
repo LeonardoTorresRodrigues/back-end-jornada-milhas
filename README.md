@@ -17,6 +17,7 @@ API que será integrada ao front-end.
 ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 <!-- ![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev) -->
@@ -47,4 +48,4 @@ Nesse desafio vamos desenvolver uma API que será integrada ao Front-End.
 - Configurar CORS para quando for para ambiente de produção
 
 ### Testes
-- Usar testes automatizados para verificar o Status Code das requisições
+- Escrever testes para verificar o Status Code das requisições

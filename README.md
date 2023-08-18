@@ -1,6 +1,6 @@
 # API Jornada Milhas
 
-API com depoimentos e avaliações de usuários.
+API com depoimentos de usuários e avaliações de lugares turísticos.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
@@ -24,7 +24,7 @@ API com depoimentos e avaliações de usuários.
 
 ## Detalhes do projeto
 
-API Rest para o Jornada Milhas, um site turístico.
+API Rest para o Jornada Milhas, um site turístico. A API mostra depoimentos de ususários e breves avaliações de lugares turísticos.
 
 *Esse projeto faz parte do alura challenges*
 

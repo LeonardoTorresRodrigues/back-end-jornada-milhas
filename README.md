@@ -1,6 +1,6 @@
 # API Jornada Milhas
 
-API que será integrada ao front-end.
+API com depoimentos e avaliações de usuários.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |

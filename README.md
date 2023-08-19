@@ -30,5 +30,6 @@ API Rest para o Jornada Milhas, um site turístico. A API mostra depoimentos de 
 
 # O que é o alura challenges?
 
-São 4 semanas de desafios para você colocar a mão na massa e criar um novo projeto, do início ao fim. [Acesse aqui](https://www.alura.com.br/challenges).
+São 4 semanas de desafios para você colocar a mão na massa e criar um novo projeto, do início ao fim. 
 
+[Acesse aqui](https://www.alura.com.br/challenges)

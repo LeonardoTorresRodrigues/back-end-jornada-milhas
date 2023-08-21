@@ -1,11 +1,11 @@
 # API Jornada Milhas
 
-API que será integrada ao front-end.
+API com depoimentos de usuários e avaliações de lugares turísticos.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **API Jornada Milhas**
-| :label: Tecnologias | javascript, node, express, cors, mysql2, eslint, nodemon, dotenv, docker, insomnia, database client, jest
+| :label: Tecnologias | javascript, node, express, cors, mysql2, eslint, nodemon, dotenv, docker, insomnia, database client, jest, supertest
 | :rocket: URL         | Em breve 🚧
 | :fire: Desafio     | https://www.alura.com.br/challenges
 
@@ -24,11 +24,12 @@ API que será integrada ao front-end.
 
 ## Detalhes do projeto
 
-API Rest para o Jornada Milhas, um site turístico.
+API Rest para o Jornada Milhas, um site turístico. A API mostra depoimentos de ususários e breves avaliações de lugares turísticos.
 
 *Esse projeto faz parte do alura challenges*
 
 # O que é o alura challenges?
 
-São 4 semanas de desafios para você colocar a mão na massa e criar um novo projeto, do início ao fim. [Acesse aqui](https://www.alura.com.br/challenges).
+São 4 semanas de desafios para você colocar a mão na massa e criar um novo projeto, do início ao fim. 
 
+[Acesse aqui](https://www.alura.com.br/challenges)

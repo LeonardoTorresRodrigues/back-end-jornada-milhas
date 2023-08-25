@@ -35,7 +35,8 @@ São 4 semanas de desafios para você colocar a mão na massa e criar um novo pr
 [Acesse aqui](https://www.alura.com.br/challenges)
 
 ## Deafios
-- CRUD no endpoint de depoimentos
-- Novo endpoint para exibir 3 depoimentos de forma randômica
+- CRUD
+- Criar endpoints 
+- Exibir 3 depoimentos de forma randômica
 - Configuração do CORS
 - Testes no endpoint de depoimentos
